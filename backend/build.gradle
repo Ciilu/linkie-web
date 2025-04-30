@@ -1,7 +1,7 @@
 plugins {
     id "org.jetbrains.kotlin.jvm" version "2.1.20"
     id "org.jetbrains.kotlin.plugin.serialization" version "2.1.20"
-    id "com.github.johnrengelman.shadow" version "7.1.2"
+    id "com.gradleup.shadow" version "8.3.6"
 }
 
 group = "me.shedaniel"
@@ -9,9 +9,6 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     maven { url = uri("https://maven.aliyun.com/repository/public/") }
-    maven { url = uri("https://maven.aliyun.com/repositories/jcenter") }
-    maven { url = uri("https://maven.aliyun.com/repositories/google") }
-    maven { url = uri("https://maven.aliyun.com/repositories/central") }
     mavenCentral()
     maven { url "https://maven.fabricmc.net" }
     maven {
@@ -22,7 +19,7 @@ repositories {
     }
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
-    maven { url "https://maven.quiltmc.org/repository/release" }
+    maven { url "https://maven.quiltmc.org/repository/release/" }
 }
 
 configurations {
